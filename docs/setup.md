@@ -1,12 +1,12 @@
 # Einrichtung einer SQL-Datenbank
 
-## 🔹 1️⃣ Was ist SQL?
+## 1:Was ist SQL?
 SQL (Structured Query Language) ist eine standardisierte Sprache zur Verwaltung und Abfrage von relationalen Datenbanken.  
 Mit SQL kannst du **Daten speichern, abfragen, bearbeiten und löschen**.
 
-## 🔹 2️⃣ Installation einer SQL-Datenbank
+## 2: Installation einer SQL-Datenbank
 
-### 📌 MySQL installieren (Windows/Linux/macOS)
+### MySQL installieren (Windows/Linux/macOS)
 Falls du MySQL verwendest, kannst du es so installieren:
 
 #### **Windows**:
