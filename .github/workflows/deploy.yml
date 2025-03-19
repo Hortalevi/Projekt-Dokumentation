@@ -1,0 +1,27 @@
+name: Secret Test Workflow
+
+on:
+  push:
+    branches:
+      - main  # Der Workflow wird bei jedem Push auf den Hauptbranch ausgeführt
+
+jobs:
+  test-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Zeige eine Umgebungsvariable
+        run: echo "Der Branch ist ${{ github.ref }}"
+
+      - name: Teste GitHub Secret
+        run: echo "Das Secret ist gesetzt!"
+        env:
+          MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+
+      - name: Verwende das Secret in einem API-Request
+        run: |
+          curl -H "Authorization: Bearer $MY_SECRET_KEY" https://api.example.com/data
+        env:
+          MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
