@@ -4,7 +4,7 @@ Hier sind die wichtigsten **SQL-Funktionen und Befehle**, die du in jeder SQL-Da
 
 ---
 
-## 🔹 1️⃣ Daten abfragen (SELECT)
+##Daten abfragen (SELECT)
 Die `SELECT`-Anweisung wird verwendet, um Daten aus einer Tabelle zu lesen.
 
 **Beispiel:**  
